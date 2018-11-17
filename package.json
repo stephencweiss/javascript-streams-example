@@ -1,0 +1,15 @@
+{
+  "name": "streaming-tutorial",
+  "version": "1.0.0",
+  "description": "A simple looking at streaming with JS",
+  "main": "streaming.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephen Weiss <scweiss1@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "stream": "0.0.2"
+  }
+}
