@@ -2,8 +2,8 @@ const {Readable} = require('stream')
 const chalk = require('chalk')
 
 /* ------------------------------- Overview -------------------------------  |
-|  Use Javascript streams to create a new readable stream         |
-|  Output the stream to standard out for visibility
+|  Use Javascript streams to create a new readable stream                    |
+|  Output the stream to standard out for visibility                          |
 |  For learning purposes, we use chalk to see transformations.               |
 |___________________________________________________________________________*/
 

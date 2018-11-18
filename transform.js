@@ -10,8 +10,6 @@ const chalk = require('chalk')
 |___________________________________________________________________________*/
 
 // Create a stream of letters A --> Z (one letter at a time)
-// A === String.fromCharCode(65)
-// Z === String.fromCharCode(90)
 const sampleStream = new Readable({
   read() {
     let newStreamValue = String.fromCharCode(this.currentCharCode++).trim();

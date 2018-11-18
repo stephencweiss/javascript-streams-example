@@ -14,7 +14,7 @@ const inOutStream = new Duplex ({
     console.log(chalk.green(`\nWriting a chunk --> `), chunk.toString());
     callback();
   },
-  read (size) {
+  read () {
     this.push(String.fromCharCode(this.currentCharCode++));
     if (this.currentCharCode > 90) {
       this.push(null);
@@ -23,4 +23,6 @@ const inOutStream = new Duplex ({
 });
 
 inOutStream.currentCharCode = 65;
-inOutStream.pipe(inOutStream).pipe(process.stdout)
+inOutStream
+  .pipe(inOutStream)
+  .pipe(process.stdout)
